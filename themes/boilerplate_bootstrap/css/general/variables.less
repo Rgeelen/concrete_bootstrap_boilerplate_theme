@@ -1,0 +1,61 @@
+// ------------------------------------------------------------
+// Variables
+//
+// Contains theme specific stylings that
+// ------------------------------------------------------------
+
+
+//
+// Colors, base colors
+// --------------------------------------------------
+
+@base-color : 		#333;
+@highlight-color: 	red;
+
+//** Background color for `<body>`.
+@body-bg:           #fff;
+
+//** Global text color on `<body>`.
+@text-color:        @base-color;
+
+
+
+//
+// == Links Global
+// --------------------------------------------------
+//## color, hover color, text decoration
+
+@a-color:            @base-color;
+//** Link hover color set via `darken()` function.
+@a-hover-color:      darken(@a-color, 15%);
+//** Link hover decoration.
+@a-hover-decoration: none;
+
+
+
+
+//
+// == Typography
+// --------------------------------------------------
+//## Font, line-height, and color for body text, headings, and more.
+
+// Base
+// -------------------------
+@base-font-family: 	"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+@font-size-base: 	16px;
+@line-height-base: 	1.6em;
+
+
+// Headings
+// -------------------------
+@h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@h-color: #ababab;
+
+@h1-font-size: 		floor( @font-size-base * 2.3 ); //36,8px
+@h2-font-size: 		floor( @font-size-base * 2.0 ); //32px
+@h3-font-size: 		floor( @font-size-base * 1.7 ); //27,2px
+@h4-font-size: 		floor( @font-size-base * 1.4 ); //22,4px
+@h5-font-size: 		floor( @font-size-base * 1.1 ); //17,6px
+@h6-font-size: 		floor( @font-size-base * 0.8 ); //12,8px

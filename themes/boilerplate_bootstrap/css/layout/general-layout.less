@@ -1,0 +1,67 @@
+// ------------------------------------------------------------
+// General-layout
+//
+// Global styles for the layout (margins / paddings)
+// ------------------------------------------------------------
+
+
+//
+// html, enabling stick footer
+// -------------------------------------------------
+html{
+	min-height: 100%;
+	position:relative;
+
+}
+
+html.editmode{
+	position: static; //reset 'position' inherited from 'html' -> when in edit mode
+}
+
+
+//
+// body, enabling stick footer
+// -------------------------------------------------
+
+body{
+	margin-bottom: 142px; //needs to match the height of the footer
+}
+
+.editmode body{
+	margin-bottom:0; //reset 'margin-bottom' inherited from 'body' -> when in edit mode
+}
+
+
+
+
+//
+// main-content, wrapper div for the content (areas)
+// ------------------------------------------------
+.main-content{
+	padding:50px 0;
+	
+	img{ 
+		max-width:100%;
+		height: auto;
+	}//create responsive images
+}
+
+
+//
+// video, create responsive video's (youtube)
+// --------------------------------------------------
+.youtubeBlock {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.youtubeBlock iframe,
+.youtubeBlock object,
+.youtubeBlock embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
