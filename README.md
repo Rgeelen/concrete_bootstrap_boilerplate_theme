@@ -2,6 +2,7 @@
  
 
 ## Theme Templates
+```
 Theme/
 	|— default.php
 	|— view.php
@@ -17,10 +18,10 @@ Theme/
 	|— js/
 		|— main.js
 		|—vendor/
-
+```
 ## CSS
 In the boilerplate we make use of Less. Concret5 5.7 comes included with a built-in Less compiler. All less files are imported in main.less. Concrete5 compiles and minify the css. To make the code more maintainable we have set up a folder / file structure.
-
+```
 /css
 	|— main.less 
 	|— general/ 
@@ -28,6 +29,7 @@ In the boilerplate we make use of Less. Concret5 5.7 comes included with a built
 	|— layouts/
 	|— components/
 	|— blocks/
+```
 
 **main.less;** All less files get imported. 
 **general/;** variables, typography
