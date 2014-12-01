@@ -1,4 +1,4 @@
-# Concrete5 5.7.x boilerplate for new themes.
+# Concrete5 5.7 boilerplate for new themes.
  
 
 ## Theme structure
