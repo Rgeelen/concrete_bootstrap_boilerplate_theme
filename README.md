@@ -31,11 +31,12 @@ In the boilerplate we make use of Less. Concret5 5.7 comes included with a built
 	|— blocks/
 ```
 
+```
 **main.less;** All less files get imported. 
 **general/;** variables, typography
 **vendor/;** alle third party css (bootstrap)
 **layouts/;** styling for specific page types
 **components/;** Smaller components linke footer, buttons
 **blocks/;** styling for Concrete5 blocks
-
+```
 
