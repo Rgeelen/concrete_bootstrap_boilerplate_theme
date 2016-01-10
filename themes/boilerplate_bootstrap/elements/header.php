@@ -1,16 +1,12 @@
 <?php defined ('C5_EXECUTE') or die(_('Access denied.')); ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="<?php echo Localization::activeLanguage()?>" class="no-js lt-ie9 lt-ie8 lt-ie7 <?php if( $c->isEditMode() ){ echo "editmode";}; ?>"> <![endif]-->
-<!--[if IE 7]>         <html lang="<?php echo Localization::activeLanguage()?>" class="no-js lt-ie9 lt-ie8 <?php if( $c->isEditMode() ){ echo "editmode";}; ?>"> <![endif]-->
-<!--[if IE 8]>         <html lang="<?php echo Localization::activeLanguage()?>" class="no-js lt-ie9 <?php if( $c->isEditMode() ){ echo "editmode";}; ?>"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="<?php echo Localization::activeLanguage()?>" class="no-js <?php if( $c->isEditMode() ){ echo "editmode";}; ?>"> <!--<![endif]-->
+<html lang="<?php echo Localization::activeLanguage()?>" class="no-js <?php if( $c->isEditMode() ){ echo "editmode";}; ?>">
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- css includes -->
         <link rel="stylesheet" href="<?php echo $view->getThemePath(); ?>/css/vendor/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="<?php echo $view->getThemePath(); ?>/css/vendor/bootstrap/bootstrap-theme.min.css">
         <?php echo $html->css($view->getStylesheet('main.less'));?>
         
         <?php Loader::element('header_required'); ?>

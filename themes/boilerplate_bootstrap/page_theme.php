@@ -12,8 +12,9 @@ class PageTheme extends Theme{
 	 */
 	
 	public function registerAssets(){
-		$this->requireAsset('javascript', 'bootstrap/*');
-		$this->requireAsset('css', 'bootstrap/*');
+		$this->providesAsset('css', 'bootstrap/*');
+		
+		
 		$this->requireAsset('javascript', 'jquery');
 	}
 
