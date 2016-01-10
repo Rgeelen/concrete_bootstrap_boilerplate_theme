@@ -6,13 +6,16 @@
 
 
 <?php $this->inc('elements/header.php'); ?>
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<?php Loader::element('system_errors', array('format' => 'block', 'error' => $error, 'success' => $success, 'message' => $message)); ?>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<?php echo $innerContent ?>
+                <?php print $innerContent; ?>
+			</div>
 		</div>
 	</div>
-</div>
+</main>
 
 <?php $this->inc('elements/footer.php'); ?>

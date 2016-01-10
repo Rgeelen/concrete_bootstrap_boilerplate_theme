@@ -1,19 +1,19 @@
-<?php defined('C5_EXECUTE') or die ('Acccess denied.');
+<?php 
+defined('C5_EXECUTE') or die ('Acccess denied.');
 /**
  * Default 
  * Is used when no other pagetype is defined for the page
  */
+?>
 
-$this->inc('elements/header.php');
+<?php $this->inc('elements/header.php'); ?>
 
-/*
- * The main area for the content
- * gridContainer is enabled
- */
+<main>
+<?php
 $a = new Area('Main');
 $a->enableGridContainer();
 $a->display($c);
+?>
+</main>
 
-
-
-$this->inc('elements/footer.php'); ?>
+<?php $this->inc('elements/footer.php'); ?>
