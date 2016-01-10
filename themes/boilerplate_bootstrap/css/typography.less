@@ -1,0 +1,40 @@
+// ------------------------------------------------------------
+// Typografie
+//
+// Contains the global typografie styling
+// ------------------------------------------------------------
+
+
+//
+// Body
+// --------------------------------------------------
+
+body{
+	font-size: 16px;
+	color: #333;
+}
+
+.ccm-page{
+
+	//
+	// Headings, headings and heading classess
+	// --------------------------------------------------
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+		font-family: @h-font-family
+	}
+
+
+	//
+	// Anchors
+	// --------------------------------------------------
+	a{
+		color:@a-color;
+
+		&:hover{
+			color:@a-hover-color;
+			text-decoration: @a-hover-decoration;
+		}
+		
+	}
+
+} // end .ccm-page
