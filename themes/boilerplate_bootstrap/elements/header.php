@@ -1,20 +1,13 @@
-<?php defined ('C5_EXECUTE') or die(_('Access denied.')); ?>
-<!DOCTYPE html>
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
+<!doctype html>
 <html lang="<?php echo Localization::activeLanguage()?>" class="no-js <?php if( $c->isEditMode() ){ echo "editmode";}; ?>">
     <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- css includes -->
         <link rel="stylesheet" href="<?php echo $view->getThemePath(); ?>/css/vendor/bootstrap/bootstrap.min.css">
         <?php echo $html->css($view->getStylesheet('main.less'));?>
-        
-        <?php Loader::element('header_required'); ?>
-        
-        <!-- Modernizr and respond.js-->
-        <script src="<?php echo $view->getThemePath(); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-
-        
+        <?php Loader::element('header_required'); ?>    
     </head>
 
     <!-- set page name and pagetype name as class -->
@@ -43,7 +36,7 @@
                         /** 
                         * Hardcoded navigation
                         * bootstrap navigation template is required
-                        * download: link
+                        * download: https://github.com/Rgeelen/Concrete5-autonav-bootstrap-template
                         */
                         
                         $nav = BlockType::getByHandle('autonav');
