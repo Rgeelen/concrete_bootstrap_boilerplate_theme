@@ -14,8 +14,10 @@
 
 		</div> <!-- end pageWrapperClass -->
 		
-		<?php Loader::element('footer_required'); ?>
+		
 		<script src="<?php echo $view->getThemePath(); ?>/js/vendor/bootstrap.min.js"></script>
 		<script src="<?php echo $view->getThemePath(); ?>/js/main.js"></script>
+
+		<?php Loader::element('footer_required'); ?>
 	</body>
 </html>
